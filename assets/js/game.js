@@ -101,7 +101,7 @@ function checkMatch() {
 			card2.classList.remove('flipped')
 			if (matched.length / 2 === totalPairs) {
 				setTimeout(() => {
-					window.location.href = 'net4.html' // Замените на нужный URL
+					window.location.href = 'https://disk.yandex.ru/d/tAedUHGWScVm3Q' // Замените на нужный URL
 				}, 1000)
 			}
 		}, 1500) // Задержка перед удалением
