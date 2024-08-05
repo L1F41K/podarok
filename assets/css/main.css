@@ -1,0 +1,577 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(51, 83, 255, 1) 55%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	color: #fff;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* height: 100vh; Для центрирования по вертикали */
+	text-align: center;
+}
+
+.title h1 {
+	margin-bottom: 20px;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px; /* Расстояние между ссылками */
+	margin-bottom: 20px;
+}
+
+.common-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	background-color: #007bff; /* Синий цвет */
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+.common-button:hover {
+	background-color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+.rules .common-button {
+	background-color: #28a745; /* Зеленый цвет */
+}
+
+.rules .common-button:hover {
+	background-color: #218838; /* Темно-зеленый цвет при наведении */
+}
+.fake {
+	margin-top: 3000px;
+}
+.modal-title {
+	color: #000;
+}
+.prosto {
+	margin-top: 3000px;
+}
+.hmm {
+	margin-top: 3000px;
+}
+.zhest {
+	margin-top: 3000px;
+}
+h5 {
+	text-align: center;
+}
+h6 {
+	text-align: center;
+}
+.next {
+	background-color: #2f4cec;
+	color: #2f4cec;
+	padding: 7px;
+	border-radius: 20px;
+	margin-top: 300px;
+}
+.votona {
+	margin-top: 900px;
+}
+.kvest {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.ababa {
+	margin-top: 5000px;
+}
+.registration-form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	color: #000;
+}
+
+.registration-form h2 {
+	margin-bottom: 20px;
+}
+
+.registration-form label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.registration-form input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	padding-right: 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.registration-form button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #28a745;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.registration-form button:hover {
+	background-color: #218838;
+}
+
+#message {
+	margin-top: 20px;
+}
+.error-message {
+	color: red;
+	margin-top: 10px;
+}
+input[type='radio'] {
+	transform: scale(1.2); /* Увеличивает размер радиокнопки в 1.5 раза */
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	margin-right: 10px;
+	margin-bottom: 10px; /* Отступ справа для радиокнопки */
+}
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px; /* Добавляет отступы между кнопками */
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	gap: 10px; /* Добавляет отступы между кнопками */
+}
+
+.image-button {
+	position: relative;
+	flex: 1 1 calc(40% - 10px); /* Уменьшает размер кнопок на 20% и учитывает отступы */
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+	overflow: hidden;
+	width: calc(
+		40% - 10px
+	); /* Уменьшает размер кнопок на 20% и учитывает отступы */
+	height: 0;
+	padding-bottom: 40%; /* Квадратная форма */
+}
+
+.image-button img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /* Сохраняет пропорции изображения и не обрезает его */
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+
+.modal-content {
+	position: relative;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.modal-content img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.close-modal {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 18px;
+	cursor: pointer;
+	color: black;
+}
+h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.clicker-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.coin-counter {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#hamster {
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.shop-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.shop-container .common-button {
+	background-color: #28a745;
+}
+.input-container {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* input {
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	width: 300px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: border-color 0.3s;
+}
+
+input:focus {
+	border-color: #007bff;
+	outline: none;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+} */
+
+#error-message {
+	color: red;
+	margin-top: 10px;
+}
+
+#puzzle-container {
+	position: relative;
+	width: 90vw; /* Увеличить ширину контейнера */
+	height: 90vh; /* Увеличить высоту контейнера */
+	max-width: 800px; /* Максимальная ширина для больших экранов */
+	max-height: 800px; /* Максимальная высота для больших экранов */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+#puzzle {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.paba {
+	padding-bottom: 100px;
+}
+.riddle-container {
+	text-align: center;
+	max-width: 400px;
+	width: 100%;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+#riddle-text {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#riddle-answer {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+#submit-button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#feedback-message {
+	margin-top: 20px;
+	font-size: 16px;
+	color: red;
+}
+/* Basic styling for the buttons */
+.custom-buttons img {
+	width: 100px; /* Adjust size as needed */
+	cursor: pointer;
+	margin: 10px;
+}
+
+/* The Modal (background) */
+.custom-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.custom-modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.custom-close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.custom-modal-content p {
+	color: #000;
+}
+#birthdayInput {
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#submitButton {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#submitButton:hover {
+	background-color: #45a049;
+}
+
+.hidden {
+	display: none;
+}
+#lightgallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px; /* Разрыв между изображениями */
+}
+
+#lightgallery a {
+	display: block;
+	width: calc(
+		33.333% - 10px
+	); /* Устанавливаем ширину каждого элемента галереи */
+	max-width: 500px; /* Максимальная ширина */
+	margin: 5px;
+	box-sizing: border-box;
+}
+
+#lightgallery img {
+	width: 100%;
+	height: 500px; /* Фиксированная высота для всех изображений */
+	object-fit: cover; /* Обрезка изображений до указанного размера, сохраняя пропорции */
+	border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+	#lightgallery a {
+		width: calc(50% - 10px); /* 2 элемента в ряду на среднем экране */
+	}
+}
+
+@media (max-width: 768px) {
+	#lightgallery a {
+		width: calc(100% - 10px); /* 1 элемент в ряду на узком экране */
+	}
+}
+
+/* Стили для LightGallery.js, без ползунков */
+.lg-thumb {
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden; /* Убираем горизонтальную прокрутку */
+	gap: 5px; /* Разрыв между превью изображениями */
+	padding: 10px 0; /* Отступы для удобства размещения превью */
+}
+
+.lg-thumb img {
+	width: 100px; /* Устанавливаем фиксированную ширину для превью */
+	height: 100px; /* Устанавливаем фиксированную высоту для превью */
+	object-fit: cover; /* Обрезка превью до указанного размера, сохраняя пропорции */
+	border-radius: 5px;
+}
+/* */
+#game-board {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.card {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	perspective: 1000px;
+	cursor: pointer;
+}
+
+.card .front-face,
+.card .back-face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	transition: transform 0.5s;
+	border: 1px solid #ccc;
+}
+
+.card .front-face {
+	background: #ccc; /* Цвет рубашки карточки */
+	transform: rotateY(0deg);
+}
+
+.card .back-face {
+	transform: rotateY(180deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card .back-face img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Убедитесь, что изображение заполняет весь блок */
+}
+
+.card.flipped .front-face {
+	transform: rotateY(180deg);
+}
+
+.card.flipped .back-face {
+	transform: rotateY(0deg);
+}
+
+.card.matched {
+	visibility: hidden;
+}
+
+/* П */
+.game-board {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	max-width: 1200px;
+}
+
+.column1,
+.column2 {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.card1 {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 10px;
+	cursor: pointer;
+	border: 2px solid #ccc;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.card1.selected {
+	border-color: blue;
+}
+.suka {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.vau {
+	margin-top: 1000px;
+}

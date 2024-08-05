@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>последний вдох</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<h2>Теперь тебе нужно прочитать записки шизофреника и собрать код</h2>
+				<div class="custom-buttons">
+					<img
+						src="assets/Img/images.png"
+						alt="Button 1"
+						class="custom-modal-button"
+						data-custom-modal="custom-modal1"
+					/>
+					<img
+						src="assets/Img/images.png"
+						alt="Button 2"
+						class="custom-modal-button"
+						data-custom-modal="custom-modal2"
+					/>
+					<img
+						src="assets/Img/images.png"
+						alt="Button 3"
+						class="custom-modal-button"
+						data-custom-modal="custom-modal3"
+					/>
+				</div>
+
+				<div id="custom-modal1" class="custom-modal">
+					<div class="custom-modal-content">
+						<span class="custom-close" data-custom-modal="custom-modal1"
+							>&times;</span
+						>
+						<p>
+							Знаешь, а я ведь будто первый раз влюбился H. Ты для меня стала
+							смыслом жизни, смыслом работать A, смыслом становится лучше P. Без
+							тебя я бы наверное совсем свихнулся P... Я рад что ты появилась в
+							моей жизни, спасибо тебе за то, что ты со мной Y! В этот
+							прекрасный день я желаю чтобы ты была счастлива, чтобы всё прошло
+							без всяких проблем и ньюансов. Самое главное чтобы ты не
+							переставала улыбаться, ведь твоя улыбка прекрасна! Мы будем
+							гудеть, шуметь, шутить, и всё это для тебя!
+						</p>
+					</div>
+				</div>
+
+				<div id="custom-modal2" class="custom-modal">
+					<div class="custom-modal-content">
+						<span class="custom-close" data-custom-modal="custom-modal2"
+							>&times;</span
+						>
+						<p>
+							Честно, делать всё это было интересно и одновременно ужасно скучно
+							B, как оказалось я не ебанный гений и у меня мало крутых идей I,
+							не то чтобы я выгорел, R я просто делаю то, что должен, отдельное
+							спасибо выражаю ChatGPT, T который помогал писать мне код и
+							послушно исполнял любую мою прихоть, H возможно я где-то не дожал,
+							где-то сделал скучно, но вы уж простите меня. D Подобным я
+							занимаюсь первый раз, и по правде говоря, я никогда не проходил
+							квесты, поэтому я не сильно знал что можно придумать A.Я
+							постарался сделать классно и с кайфом и надеюсь конец этого квеста
+							тебя порадует, его кстати можно будет обновлять Y!
+						</p>
+					</div>
+				</div>
+
+				<div id="custom-modal3" class="custom-modal">
+					<div class="custom-modal-content">
+						<span class="custom-close" data-custom-modal="custom-modal3"
+							>&times;</span
+						>
+						<p>
+							Ну и напоследок хотел бы поблагодарить всех тех, кто собрались
+							здесь рядом, чтобы посмотреть что я такого напридумывал. Хотел бы
+							выразить вам отдельную благодарность, вы реально крутые!!! Я
+							всегда хотел как-то стать ближе к вам, надеюсь что в этот день у
+							меня это получится, я всегда готов и рад вам помочь, я очень
+							сильно хочу с вами подружиться, а так же я хотел бы чтобы мы
+							побольше проводили время вместе. Просто находясь рядом с вами, я
+							чувствую себя лишним и не в своей тарелке... Ладно, а теперь прошу
+							завершать данный квест
+						</p>
+					</div>
+				</div>
+				<div class="input-container">
+					<input type="text" id="birthdayInput" placeholder="Введите текст" />
+					<button id="submitButton">Ввести</button>
+					<p id="error-message" class="hidden">
+						Неверный текст, попробуйте еще раз.
+					</p>
+				</div>
+			</div>
+		</main>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

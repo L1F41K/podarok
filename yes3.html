@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Когда свадьба?</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<h1><a href="yes4.html">КТО</a> ЛИШНИЙ??</h1>
+			</div>
+			<!-- Container for the images -->
+			<div class="image-container">
+				<!-- Row 1 -->
+				<div class="row">
+					<button class="image-button" onclick="openModal('modal-1')">
+						<img src="assets/Img/1.jpg" alt="Image 1" />
+					</button>
+					<button class="image-button" onclick="openModal('modal-2')">
+						<img src="assets/Img/2.jpg" alt="Image 2" />
+					</button>
+				</div>
+				<!-- Row 2 -->
+				<div class="row">
+					<button class="image-button" onclick="openModal('modal-3')">
+						<img src="assets/Img/3.jpg" alt="Image 3" />
+					</button>
+					<button class="image-button" onclick="openModal('modal-4')">
+						<img src="assets/Img/4.jpg" alt="Image 4" />
+					</button>
+				</div>
+				<div class="row">
+					<button class="image-button" onclick="openModal('modal-5')">
+						<img src="assets/Img/5.jpg" alt="Image 3" />
+					</button>
+					<button class="image-button" onclick="openModal('modal-6')">
+						<img src="assets/Img/6.jpg" alt="Image 4" />
+					</button>
+				</div>
+				<div class="row">
+					<button class="image-button" onclick="openModal('modal-7')">
+						<img src="assets/Img/7.jpg" alt="Image 3" />
+					</button>
+					<button class="image-button" onclick="openModal('modal-8')">
+						<img src="assets/Img/8.jpg" alt="Image 4" />
+					</button>
+				</div>
+			</div>
+
+			<!-- Modal templates -->
+			<div id="modal-1" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/11.jpg" alt="Modal Image 1" />
+					<span class="close-modal" onclick="closeModal('modal-1')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-2" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/22.jpg" alt="Modal Image 2" />
+					<span class="close-modal" onclick="closeModal('modal-2')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-3" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/33.jpg" alt="Modal Image 3" />
+					<span class="close-modal" onclick="closeModal('modal-3')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-4" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/44.jpg" alt="Modal Image 4" />
+					<span class="close-modal" onclick="closeModal('modal-4')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-5" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/55.jpg" alt="Modal Image 4" />
+					<span class="close-modal" onclick="closeModal('modal-5')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-6" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/66.jpg" alt="Modal Image 4" />
+					<span class="close-modal" onclick="closeModal('modal-6')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-7" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/77.jpg" alt="Modal Image 4" />
+					<span class="close-modal" onclick="closeModal('modal-7')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<div id="modal-8" class="modal">
+				<div class="modal-content">
+					<img src="assets/Img/88.jpg" alt="Modal Image 4" />
+					<span class="close-modal" onclick="closeModal('modal-8')"
+						>Закрыть</span
+					>
+				</div>
+			</div>
+			<!-- Add more modals as needed -->
+		</main>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

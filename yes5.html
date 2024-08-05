@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>ГОЛЫЙ МУЖИК ЕСТЬ КИНДЕР БУЭНО</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div id="initial-screen">
+					<h1>ИГРА В ШПИОНА</h1>
+					<h3>
+						тебе нужно будет разгадать шифр, какой узнаешь после нажатия на
+						кнопку
+					</h3>
+					<h3>
+						тебе нужно будет угадать фразу, которую нужно зашифровать, а после
+						этого воспользоваться шифром и написать в специальном поле
+						зашифрованную фразу
+					</h3>
+					<button id="start-button">Начать</button>
+				</div>
+
+				<!-- Скрытое аудио и контент -->
+				<audio id="audio" src="assets/Img/goliy.mp3" preload="auto"></audio>
+				<div id="content" style="display: none">
+					<h2>ШИФР ЦЕЗАРЯ СДВИГ НА 2</h2>
+					<input type="text" id="secret-input" placeholder="Введите код..." />
+					<button id="check-button">Проверить</button>
+					<p id="error-message" style="display: none">Ответ неверный!</p>
+				</div>
+				<div id="second-content" style="display: none">
+					<h2>ШИФР ЦЕЗАРЯ СДВИГ НА 3</h2>
+					<input type="text" id="second-input" placeholder="Введите код..." />
+					<button id="second-check-button">Проверить</button>
+					<p id="second-error-message" style="display: none">Ответ неверный!</p>
+				</div>
+			</div>
+		</main>
+
+		<script src="assets/js/spy.js" defer></script>
+	</body>
+</html>

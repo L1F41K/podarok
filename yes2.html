@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>А мы продолжаем</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<h2>Мне кажется пора пройти регистрацию</h2>
+
+				<div class="registration-form" id="registrationForm">
+					<h2>❤❤❤Регистрация❤❤❤</h2>
+					<form id="regForm">
+						<label for="login">Логин:</label>
+						<input type="text" id="login" name="login" required /><br />
+						<label for="password">Пароль:</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							required
+						/><br />
+						<button type="submit">Зарегистрироваться</button>
+					</form>
+					<p id="message"></p>
+				</div>
+				<div class="test-container" id="testContainer" style="display: none">
+					<div class="question" id="question1">
+						<h3>Вопрос 1: Когда у тебя день рождения?</h3>
+						<form id="form1">
+							<input type="radio" id="q1a1" name="q1" />
+							<label for="q1a1">21.08.2006</label><br />
+							<input type="radio" id="q1a2" name="q1" class="correct-answer" />
+							<label for="q1a2">07.08.2007</label><br />
+							<input type="radio" id="q1a3" name="q1" />
+							<label for="q1a3">11.09.2001</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form1', 'question1', 'question2')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error1"></p>
+					</div>
+					<div class="question" id="question2" style="display: none">
+						<h3>Вопрос 2: 2 + 2 = ?</h3>
+						<form id="form2">
+							<input type="radio" id="q2a1" name="q2" />
+							<label for="q2a1">4</label><br />
+							<input type="radio" id="q2a2" name="q2" />
+							<label for="q2a2">5000</label><br />
+							<input type="radio" id="q2a3" name="q2" class="correct-answer" />
+							<label for="q2a3">100</label><br />
+							<input type="radio" id="q2a4" name="q2" />
+							<label for="q2a3">5</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form2', 'question2', 'question3')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error2"></p>
+					</div>
+					<div class="question" id="question3" style="display: none">
+						<h3>Вопрос 3: Вас зовут Павел?</h3>
+						<form id="form3">
+							<input type="radio" id="q3a1" name="q3" class="correct-answer" />
+							<label for="q2a1">Блять Игорь нахуй</label><br />
+							<input type="radio" id="q3a2" name="q3" />
+							<label for="q2a2">Меня? Да, Павел</label><br />
+							<input type="radio" id="q3a3" name="q3" />
+							<label for="q2a3">Да, а её Карина</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form3', 'question3', 'question4')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error3"></p>
+					</div>
+					<div class="question" id="question4" style="display: none">
+						<h3>Вопрос 4: Как правильно переводится 屄有狗的风格 ?</h3>
+						<form id="form4">
+							<input type="radio" id="q4a1" name="q4" />
+							<label for="q2a1">Я тебя люблю</label><br />
+							<input type="radio" id="q4a2" name="q4" class="correct-answer" />
+							<label for="q2a2">Пизда раком встала</label><br />
+							<input type="radio" id="q4a3" name="q4" />
+							<label for="q2a3">Гойда Гойда СВО СВО</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form4', 'question4', 'question5')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error4"></p>
+					</div>
+					<div class="question" id="question5" style="display: none">
+						<h3>Вопрос 5: Что означает "шлифануть яйца" на модном сленге?</h3>
+						<form id="form5">
+							<input type="radio" id="q5a1" name="q3" />
+							<label for="q2a1">Сделать яичницу</label><br />
+							<input type="radio" id="q5a2" name="q3" />
+							<label for="q2a2">Натереть яйца</label><br />
+							<input type="radio" id="q5a3" name="q3" class="correct-answer" />
+							<label for="q2a3">Полизать яйца</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form5', 'question5', 'question6')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error5"></p>
+					</div>
+					<div class="question" id="question6" style="display: none">
+						<img src="assets/Img/noch.jpg" alt="" />
+						<h3>Вопрос 6: когда ето</h3>
+						<form id="form6">
+							<input type="radio" id="q6a1" name="q3" class="correct-answer" />
+							<label for="q2a1">ночю</label><br />
+							<input type="radio" id="q6a2" name="q3" />
+							<label for="q2a2">утром просто вод водой</label><br />
+							<button
+								type="button"
+								onclick="checkAnswer('form6', 'question6', 'question7')"
+							>
+								Ответить
+							</button>
+						</form>
+						<p class="error-message" id="error6"></p>
+					</div>
+					<div class="question" id="question7" style="display: none">
+						<h3>Вопрос 7: Кто мой любимый супергерой из фильмов?</h3>
+						<form id="form7">
+							<input type="radio" id="q5a1" name="q3" />
+							<label for="q2a1">Робин Гуд</label><br />
+							<input type="radio" id="q5a2" name="q3" />
+							<label for="q2a2">Джейсон Стейтем</label><br />
+							<input type="radio" id="q5a3" name="q3" />
+							<label for="q2a3">Игорь Синяк</label><br />
+							<input type="radio" id="q5a4" name="q3" />
+							<label for="q2a3">Майор Гром</label><br />
+							<input type="radio" id="q5a5" name="q3" />
+							<label for="q2a3">Кристина Си</label><br />
+							<input type="radio" id="q5a6" name="q3" class="correct-answer" />
+							<label for="q2a3">Бетмен</label><br />
+							<button type="button" onclick="redirectToPage()">Ответить</button>
+						</form>
+						<p class="error-message" id="error5"></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="assets/js/registration.js"></script>
+	</body>
+</html>
